@@ -1,0 +1,10 @@
+Command line interface 
+
+1.How do i create a hidden file? and how to displat it?
+-I can create a hidden file or change a file to be hidden by putting a . before the name of the file
+-To display a hidden file u can go in the cmd/terminal and type ls -a(list files -a) and it shows hidden files in that directory
+2.How do i create multiple nested directories>?
+-You can create multple nested directories by putting mkdir -p Just/for/fun 
+3.How do i append a message to a file, without a newline character?
+? With html you can use <br>
+-----------------------------------------------------------------------------------------------
