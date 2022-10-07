@@ -6,5 +6,5 @@ Command line interface
 2.How do i create multiple nested directories>?
 -You can create multple nested directories by putting mkdir -p Just/for/fun 
 3.How do i append a message to a file, without a newline character?
-? With html you can use <br>
+You can use >> to append text to end of file
 -----------------------------------------------------------------------------------------------
