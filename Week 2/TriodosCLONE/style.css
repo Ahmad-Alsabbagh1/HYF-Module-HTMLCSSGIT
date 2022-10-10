@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Akkurat';
+    src: url(fonts/FontsFree-Net-Akkurat.ttf);
+}
+header{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    height: 7vh;
+    align-items: center;
+    margin-top:20px;
+    justify-content: space-around;
+}
+.logo,.icons,.login{
+    display: flex;
+}
+.logo{
+    flex:2;
+
+}
+.logo img{
+    width:18em;
+    
+}
+.icons{
+    display: flex;
+    justify-content: center;
+  
+    flex:1;
+
+}
+.icons img{
+    max-width: 1.4em;
+}
+.login{
+    color: rgb(59, 129, 194);
+    
+    flex:1;
+
+}
+.logo img,
+.login a
+{
+    margin:auto;
+}
