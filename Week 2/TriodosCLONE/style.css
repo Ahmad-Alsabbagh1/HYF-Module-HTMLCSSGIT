@@ -9,6 +9,9 @@
     font-family: 'Akkurat';
     src: url(fonts/FontsFree-Net-Akkurat.ttf);
 }
+body{
+    max-width: 100vw;
+}
 header{
     display: flex;
     width: 90%;
@@ -57,7 +60,7 @@ button{
     border: none;      
     cursor: pointer;
 }
-button:hover{
+header button:hover{
     background-color: rgb(227, 222, 222)
 }
 .cash-register{
@@ -126,7 +129,7 @@ color:#071A6B;
         list-style: none;  
 
 }
-.list li:before{
+li:before{
 
  content: '> '
 }
@@ -148,7 +151,7 @@ color:#071A6B;
 .section3{
     background-image: url(img/map.png);
     width: 100vw;
-    height: 81vh;
+    height: 85vh;
     background-repeat: no-repeat; 
     
     
@@ -166,16 +169,15 @@ color:#071A6B;
 
 }
 .section3 p{
-    padding-top:130px;
+    position:relative;
     font-size: 3.3em;
-    padding-left:200px ;
-    padding-right: 200px;
+    top:15%;
 }
 .section3 button{
     margin: 0;
     position: relative;
     left: 42%;
-    top:50px;
+    margin-top:160px
 
 }
 .section3 button:hover{
@@ -183,17 +185,38 @@ color:#071A6B;
 }
 footer{
     display: flex;
-    width: 100vw;
+    max-width: 100vw;
     height: 28vh;
     background-color: #071A6B;
+    justify-content: space-between;
 
 }
 .socials{
     display: flex;
+    justify-content: space-evenly;
+flex:1;
 }
-
-
-
+.socials img{
+    width: 1.2em;
+    height:fit-content;
+padding-top: 3em;
+}
+footer p{
+    color: white;
+    padding-top: 6em;
+}
+.contacts{
+    display: flex;
+    flex:1;
+}
+.contacts ul{
+    display: flex;
+    list-style: none;
+    padding-top:14%;
+    column-gap: 55px;
+justify-content: center;
+color: white;
+}
 
 
 
@@ -204,9 +227,8 @@ footer{
         font-size:3em;
     }
 
-p{
+p, .section3 p{
     font-size:1em;
-    top:0%;
 }
 .sluit-je-aan{
     margin-left:35%
@@ -214,4 +236,9 @@ p{
 .pas-op{
     width:80%
 }
+.section3 button{
+    left:22%
+
+}
+
 }
