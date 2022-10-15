@@ -170,7 +170,7 @@ a:hover,.lees-meer:hover{
     background-repeat: no-repeat; 
     
     
-    background-size: 100% 100% ;
+    background-size: cover;
     background-position: 50% 40%;
 }
 .section3 h2,.section3 p{
@@ -290,7 +290,7 @@ margin-bottom: 60px;
     }
 
 p, .section3 p,.cash-register p{
-    font-size:1em;
+    font-size:0.9em;
 }
 .sluit-je-aan{
     margin-left:35%
