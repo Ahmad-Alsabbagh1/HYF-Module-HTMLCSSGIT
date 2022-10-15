@@ -96,13 +96,17 @@ h1{
     margin-left:45%;
     color:blue;
     background-color: white;
-    border:1px solid gray;
+    border:2px solid gray;
     font-size: 130%;
     padding: 1em;
     border-radius: 5px;
 }
+.bekijk{
+    align-self:center ;
+}
 .sluit-je-aan:hover{
     border-color: blue;
+    background-color: rgb(227, 222, 222);
 }
 
 .section2{
@@ -130,12 +134,23 @@ li:before{
 
  content: '> '
 }
+a{
+    text-decoration-color:rgb(190, 190, 236) ;
+    text-decoration-thickness:2px ;
+}
+a:hover,.lees-meer:hover{
+    text-decoration-color: blue ;
+    
+
+}
 .pas-op{
     font-size: 1.3em;
     color: #071A6B;
     width:50%;
     background-color: #FFF5B9;
     padding:30px 40px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 .pas-op p{
     margin-top:4px ;
@@ -143,6 +158,7 @@ li:before{
 }
 .lees-meer{
     text-decoration: underline;
+    text-decoration-color:rgb(190, 190, 236) ;
     cursor:pointer
 }
 .section3{
@@ -177,33 +193,70 @@ li:before{
 
 }
 .section3 button:hover{
-    background-color: rgb(227, 222, 222)
+    background-color: rgb(227, 222, 222);
+    border-color: blue;
+
 }
 footer{
     display: flex;
     height: 28vh;
+    width: 100vw;
     background-color: #071A6B;
 
 }
 .socials{
     display: flex;
-    justify-content: space-evenly;
-flex:1;
-align-content:center
+    justify-content: center;
+    flex:1;
+
+    column-gap: 30px;
+    flex-direction: column;
+}
+.language{
+    align-self: center;
+    background-color:transparent;
+    border:2px solid rgba(124, 124, 124, 0.555);
+    color:white;
+    margin-bottom: 70px;
+    margin-right: 150px;
+    width:40%;
+    padding:20px;
+    border-radius: 5px;
+
+    
+}
+.language:hover{
+    border: 2px solid white
+}
+
+.sm{
+    display: flex;
+    column-gap: 30px;
+    width:60%;
+    align-self:center
+}
+.sm p{
+    float:left;
 }
 .socials img{
-    width: 1.3em;
-padding-top: 3em;
+    width: 1.5em;
+    
+
+
+}
+.socials img:hover{
+    background-color: white;
 }
 
 footer p{
     color: white;
-    align-self:center;
+   
+    
 }
 .contacts{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     flex:1;
 }
 .contacts ul{
@@ -212,29 +265,43 @@ footer p{
     column-gap: 15px;
 color: white;
 cursor: pointer;
+margin-bottom: 60px;
 }
 
+.contacts li:hover{
+    text-decoration: underline;
+}
 
 
 
 
 @media (max-width:600px){
+    .logo img{
+        width:9em
+    }
     h1{
         font-size:3em;
     }
 
-p, .section3 p{
+p, .section3 p,.cash-register p{
     font-size:1em;
 }
 .sluit-je-aan{
     margin-left:35%
 }
-.pas-op{
-    width:80%
-}
+
 .section3 button{
     left:22%
 
 }
-
+.contacts{
+    align-self: flex-start;
+}
+.contacts ul {
+    
+    flex-direction: column;
+}
+.pas-op{
+    width: 90%;
+}
 }
